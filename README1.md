@@ -11,7 +11,7 @@ tf.__version__
 <H5>Nympy</H5>
 
 - import nympy as np
-- arr = np.arrange (0,11)
+- arr = np.arange(0,11)
 - Try below commands
 - arr
 - arr[8]
@@ -20,7 +20,7 @@ tf.__version__
 - array[5:]
 - <H6>Broadcasting</H6>
 - arr[0:5]=100 #cannot do this in python list
-- arr=np.arrange(0,11)
+- arr=np.arange(0,11)
 - slice_of_arr=arr[0:5]
 - slice_of_arr[:]
 <H6>Array Copy</H6>
@@ -45,7 +45,7 @@ We will quite often see
 - Go to google colab -> https://colab.research.google.com/
 - open your file already created
 - import numpy as np
-- arr = np.arrange(0,10)
+- arr = np.arange(0,10)
 - arr+5 will # give element by element basic
 - arr + arr # will add element by element; array size must be the same
 - arr/arr # will return nan (not a number) in the first element
@@ -59,7 +59,7 @@ We will quite often see
 - arr.max(0
 - arr.var()
 - arr.std() #standard deviation
-- arr2d= np.arrange(0,25).reshape(5,5)
+- arr2d= np.arange(0,25).reshape(5,5)
 - arr2d.shape # returns the shape of the array
 - arr2d.sum() #sum up all the elements
 - arr2d.sum(axis=0) #perform across the rows (called operation across)
