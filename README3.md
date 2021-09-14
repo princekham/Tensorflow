@@ -61,7 +61,38 @@
     return state[0]
 - df_one['first letter']=df_one['col2'].apply(grab_first_letter)
 - let me show slightly more complex function
-- 5:21
+- We will define a funcion
+```
+def complex_letter(state):
+  if state[0] == "W":
+    return "Washington"
+  else:
+    return "Error"
+```
+- def_one['col2'].apply(complex_letter) # this demands string input; if integer input, error
+- another way to create a column is mapping
+- def_one['k1']
+- my_map = {'A':1,'B':2,'C':3}
+- def_one['k1'].map(my_map)
+- we can add to the df by
+- df_one['num'] = def_one['k1'].map(my_map)
+- to get the max no in a column -> df_one['col1'].max()
+- df_one['col1'].idxmax() #this returns the location of the max
+- to grab all the columns -> df_one.columns
+- df_one.column = ['c1','c2','c3','c4','c5','c6'] # this reassign the columns
+- for sorting
+- df_one.sort_values('c3') # c3 is alphabetical
+- typical data structure ->
+-  features = pd.DataFrame({'A':[100,200,300,400, 500],
+-                           'B'[12,13,14,15,16]}
+-   predictions = pd.Dataframe({'pred':[0,1,1,0,1]})
+-   to join those two dataframe:
+-   pd.concat([features,preductions, axis=1)
+-   to create dummy variable
+-   df_one['c1']
+-   pd.get_dummies(df_one['C1']) # returns as many columns as categoriy and
+- it returns 1 if category mataches up
+
 
 
 
