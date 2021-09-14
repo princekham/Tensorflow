@@ -42,7 +42,26 @@
 - df.groupby('Year').describe() # displays all count mean std min etc
 - df.groupby('Year').describe().transpose()
 - describ() function is useful to get statistics
-- 
--
+# 7.Panda useful operations
+
+- import panda as pd
+- df_one= pd.DataFrame({'k1':['A','A','B','B','C','C'],
+                        'col1':[100,200,300,300, 400,500],
+                        'col2':['NY','CA','WA','WA','AK','NV']})
+- how to get value on uniq values
+- def_one['col2'].unique()
+- def_one['k1'].nunique() # returns the no of uniques no
+- def_one['col2'].value_counts() # returns the no of uniques values
+- to drop a duplicate
+- df_one.drop_duplicates() # this dropped the duplicate row
+- to create new columns with operations and functions
+- df_one['NEW'] = df_one['col1']*10 # will add new column
+- for more functionality, we can use
+- def grab_first_letter(state):
+    return state[0]
+- df_one['first letter']=df_one['col2'].apply(grab_first_letter)
+- let me show slightly more complex function
+- 5:21
+
 
 
