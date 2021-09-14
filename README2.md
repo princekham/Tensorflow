@@ -63,6 +63,16 @@ Panda Crush course
 - to select a subset of a row and column at the same time
 - rows A&C and column W&Y
 - df.loc[['A','C']['W','Y']]
-- 
-- 
+# DataFrame part 2
+- grab base on certain condition
+- to grab a subset of a frame with positive values
+- df>0 # returns True of False
+- df[df>0] returns NaN in places of negative nos
+- columns represent features ; say we want to filter based on condition in x
+- df['X']>0
+- take this condition and pass that to our dataframe
+- df[df['X']>0] will returns the results where X is greater than 0
+- x >0 ဖြစ်တဲ့ rows တွေကိုပဲ ဖြော်ပြမှာဖြစ်တယ်။
+- and from that we can grab a single column like
+- df[df['X']>0] ['W'] # and this returns W column out of the result above
 - 
