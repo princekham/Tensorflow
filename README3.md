@@ -18,4 +18,31 @@
 - df['B'].fillna(value= df['B'].mean())
 - to do it to the entire df
 - df.fillna(df.mean())
+# 6.Groupby Operaton
+
+- similar to split, apply, combine
+- the operation chosen with groupby() call must be an aggregation method
+- aggregation method -> take in many -> return one result
+- import panda as pd
+- locate the CSV file
+- inside 1-Panda-Crash-Course, create a new notebook
+- notebook and Universities.csv must be in the same folder
+- then should be able to run the following command
+- df = pd.read_csv('Universities.csv') # should be able to call the file with tab or not ok
+- df = pd.read_csv('Universities.csv')
+- df.head()
+- df.groupby('Year') # this will return a groupby object
+- df.groupby('Year').mean() # and this returns a dataframe
+- can see the available functions in the panda notebook
+- can change asending or desending order by
+- df.groupby('Year').sum().sort_index(asending=False)
+- can groupby multiple columns also
+- to group by the year and then goupby the sectors
+- df.groupby(['Year','Sector']).sum()
+- df.groupby('Year').describe() # displays all count mean std min etc
+- df.groupby('Year').describe().transpose()
+- describ() function is useful to get statistics
 - 
+-
+
+
