@@ -41,7 +41,18 @@
 - plt.figure(figsize=(12,8))
 - now we will see the countplot
 - df.head() # to see the heads
-- 6.03
--
+- sns.countplot(x='sex', data=df)
+- sns.countplot(x='cp', data=df, hue='sex',pallete='terrian') # that categorize by male/femal
+<H3>box plot</H3>
+
+- sns.boxplot(x='sex',y='age',data=df) # sex should be categorical and age should be countinuous
+- sns.boxplot(x='target', y='thalach', data=df,hue='sex')
+<H3>Scattered plot</H3>
+
+- sns.scatterplot(x='chol', y= 'trestbps', data=df, hue='sex', pallete='Dark2', size= 'age')
+<H3> Paired plot</H3>
+
+- iris = pd.read_csv('../data/iris.csv')
+- sns.pairplog(iris, hue='species')
 - 
 - 
