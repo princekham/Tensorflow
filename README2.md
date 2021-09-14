@@ -75,4 +75,21 @@ Panda Crush course
 - x >0 ဖြစ်တဲ့ rows တွေကိုပဲ ဖြော်ပြမှာဖြစ်တယ်။
 - and from that we can grab a single column like
 - df[df['X']>0] ['W'] # and this returns W column out of the result above
+-  or can just grab the location row
+-  df[df['X']>0].iloc[0] # x>0 ဖြစ်တဲ့ ပထမ  row ကို ရွေးမယ်။
+-   multiple condition နဲ့ လဲ ရွေးနိုင်တယ်
+- (df['W']>0) & (df['Y']>1) # or operator - |
+- how to reset index
+- df.reset_index() #will add a new index column
+- how to set index values from a column values
+- new_ind = ['CA','NY','YW','OR','CO']
+- df['States']=new_ind # this will add new index to the existing df with States as comumn name
+- to make the States column as index
+- df.set_index ('States') # States is not the name of the column; it is just a name
+- to overwrite
+- df = df.set_index ('States')
+- df.describe() # gives numerical information
+- df.info # tells how many non-null and datatypes
+- df.dtypes # returns only integer types
+- 
 - 
