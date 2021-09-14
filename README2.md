@@ -43,5 +43,26 @@ Panda Crush course
 - to grab a single column
 - df['W']
 - returns panda series - can check with ->type (df['W'])
+- To grab more than one column
+- df['W','Z']
+- to create a new column based on old column
+- df['new']=df['W']+df['Y']
+- to remove a culum
+- df.drop('new',axis=1) # axis = 1 means look for the column not index
+- but still need to overwrite; to do that
+- df=df.drop('new',axis=1)
+- To select a row
+- df.loc['A'] # not only columns, rows are also panda series
+- for grabbing multiple rows
+- df.loc[['A','E']]
+- can grab by integer location also
+- df.iloc[0] # will return the first row
+- df.iloc[0:3] # 0 to 2 not including 3
+- to remove a row
+- df.drop('C') # no need to specify axis=0
+- to select a subset of a row and column at the same time
+- rows A&C and column W&Y
+- df.loc[['A','C']['W','Y']]
+- 
 - 
 - 
