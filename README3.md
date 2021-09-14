@@ -4,4 +4,18 @@
 - df=pd.DatatFrame({'A':[1,2,np.nan,4], 'B':[5,np.nan,np.nan,8], 'C':[10,20,30,40]})
 - the main method uses is - df.dropna() # you can press tab twice to see the documentation
 - df.dropna() # will return a row that have valid datas
+- df.dropna(axis=1) # will return a colum that thave valid datas
+- df.dropna(axis=1, thresh=2) # with at least two non-null values
+- Fill the missing data
+- df.fillna() # tab twice to see available parameters
+- df.fillna(value='FILL VALUE') #Nan is replaced with 'FILL VALUE'
+- if the fill value is string the whole column is converted to string
+- if float, the same too
+- just to choose column
+- df['A'].fillna(value=0) #then we can do some sort of reassignment
+- df['A'] = df['A'].fill(value=0) # now permanently change the data frame
+- to fill the missing value in B with the average value in B
+- df['B'].fillna(value= df['B'].mean())
+- to do it to the entire df
+- df.fillna(df.mean())
 - 
