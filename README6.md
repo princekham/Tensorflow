@@ -21,3 +21,7 @@
 - backpropagation is to update weights and biases
 - from the last error, we calculate the error, biases and weights accordingly and minimize the cost function 
 - that is the gist
+
+- z <sup>L</sup>=w<sup>L</sup>a<sup>L-1</sup> + b<sup>L</sup>
+- a<sup>L-1</sup> = sigma(z <sup>L</sup>) # sigma is gradient I think
+- C<sub>0</sub> = (a<sup>L-1</sup> -y)<sup>2</sup>
